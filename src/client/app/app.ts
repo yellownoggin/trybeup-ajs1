@@ -6,7 +6,7 @@ namespace myApp {
     .controller('MainController', MainController);
 
     function MainController() {
-        var vm = this;
+        let vm = this;
         vm.test = 'Hello World';
     }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "medev1",
+  "name": "trybeup-ajs1",
   "version": "1.0.0",
   "description": "Directly inspired by the gulp course with John Papa.",
   "main": "index.js",
@@ -65,5 +65,13 @@
     "serve-favicon": "^2.0.1",
     "wiredep": "^4.0.0",
     "yargs": "^4.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yellownoggin/trybeup-ajs1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yellownoggin/trybeup-ajs1/issues"
+  },
+  "homepage": "https://github.com/yellownoggin/trybeup-ajs1#readme"
 }
