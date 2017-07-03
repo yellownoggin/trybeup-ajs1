@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Angular Material - Starter App</title>
+    <title>Tribeup-ytribe</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,15 +27,10 @@
 
     <!-- build:css css/app.css -->
     <!-- inject:css -->
-
     <link rel="stylesheet" href="/src/client/css/common.css">
-
     <link rel="stylesheet" href="/src/client/css/layout.css">
-
     <link rel="stylesheet" href="/src/client/css/main.css">
-
     <link rel="stylesheet" href="/src/client/css/style.css">
-
     <!-- endinject -->
     <!-- endbuild -->
 
@@ -57,16 +52,23 @@
 
 </head>
 
-<body ng-app="myApp" ng-controller="MainController as vm" layout="column" ng-cloak>
+<!--
+  TODO:
+  1. the hero text fat/weight
+  2. the hero button text
+  3. footer
+  4. better org css
+  5. md lite out - suffix mdl
+  6. angular material version
+  7. name the type of template (brand it)
+  8. centering the title on the small screen
+-->
+
+<body ng-app="app" ng-cloak>
 
 
-    <div layout="row" layout-align="center center">
-        <div layout="column">
-            <h1>{{vm.test}}</h1>
-        </div>
-    </div>
 
-
+  <app-shell></app-shell>
 
 
 
@@ -83,12 +85,18 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-
+<!-- TODO: consistent file names (.) -->
     <!-- build:js js/app.js -->
     <!-- inject:js -->
-
-    <script src="/src/client/app/app.js"></script>
-
+    <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/core/core.module.js"></script>
+    <script src="/src/client/app/landing/landing.module.js"></script>
+    <script src="/src/client/app/shell/shell.module.js"></script>
+    <script src="/src/client/app/core/core.config.js"></script>
+    <script src="/src/client/app/landing/landing.route.js"></script>
+    <script src="/src/client/app/shell/footer.directive.js"></script>
+    <script src="/src/client/app/shell/shell-directive.js"></script>
+    <script src="/src/client/app/shell/topnav-directive.js"></script>
     <!-- endinject -->
 
     <!-- inject:templates:js -->

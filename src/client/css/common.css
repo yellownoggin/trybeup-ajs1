@@ -1,12 +1,75 @@
-.hidden-chars ._dot:after, .hidden-dot:after, .site-footer .supporting-information ._dot:after {
-    opacity: .4;
-    content: "·";
-    left: 50%;
-    top: 46%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+body[ng-cloak] {
+  display: none;
 }
-.bg-f6f6f6 {
-    background: #f6f6f6 !important;
-    color: #202020 !important;
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+html, body {
+    font-family: "Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+body {
+    font-family: 'Roboto',Helvetica,sans-serif;
+}
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: 0;
+  margin: 0 0 16px;
+}
+
+h6,
+p {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+}
+
+h3,
+h4 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+h5 {
+  /*     font-size: 16px; */
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  max-width: 300px;
 }

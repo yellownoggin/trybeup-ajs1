@@ -1,0 +1,37 @@
+<md-toolbar class="top-nav box-shadow" layout="row" layout-align="start center">
+    <span>
+          <a href="#">
+          <img src="https://dummyimage.com/37x37/fff/222" alt="" />
+            <span>YTribe</span>
+    </a>
+    </span>
+
+    <!-- visibility headed not sure what this use is for-->
+    <!-- <input type="checkbox" name="name" value=""> -->
+    <div layout="row" flex>
+
+        <span class="nav-spacer" flex></span>
+
+        <!-- mobile nav -->
+        <nav class="" hide-gt-sm>
+            <md-menu md-offset="0 70">
+                <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+                    <md-icon>menu</md-icon>
+                </md-button>
+                <md-menu-content width="4">
+                    <md-menu-item>
+                        <md-button href="#">
+                            <span md-menu-align-target="">PREVIEW ON GITHUB</span>
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+        </nav>
+        <!-- mobile nav end  -->
+
+        <nav class="mdl-navigation github" layout="row" hide show-gt-sm>
+            <a href="#" class="mdl-navigation__link">Preview On Github</a>
+        </nav>
+    </div>
+
+</md-toolbar>
