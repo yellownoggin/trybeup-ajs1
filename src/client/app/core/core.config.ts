@@ -1,9 +1,6 @@
 namespace app {
     'use strict';
 
-    // Initialize Firebase outside of the angular app* per the firebase angular youtube conventions
-
-
     angular
         .module('app.core')
         .config(initDebug)
