@@ -7,4 +7,10 @@ var app;
         'app.landing',
         'app.shell'
     ]);
+    //     .controller('MainController', MainController);
+    //
+    //     function MainController() {
+    //         const vm = this;
+    //         vm.test = 'Hello World';
+    //     }
 })(app || (app = {}));

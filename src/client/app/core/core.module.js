@@ -5,7 +5,8 @@ var app;
         .module('app.core', [
         'ngMaterial',
         'ui.router',
-        'ngAnimate'
+        'ngAnimate',
+        'firebase'
     ]);
 })(app || (app = {}));
 ;

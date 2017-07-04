@@ -1,6 +1,18 @@
 namespace app {
     'use strict';
 
+
+    // Initialize Firebase
+     const config = {
+       apiKey: 'AIzaSyAev5B591IvR4DlNtyAQmsoqGwcC-dtZpE',
+       authDomain: 'ytribe-ajs16.firebaseapp.com',
+       databaseURL: 'https://ytribe-ajs16.firebaseio.com',
+       projectId: 'ytribe-ajs16',
+       storageBucket: 'ytribe-ajs16.appspot.com',
+       messagingSenderId: '1062731323167'
+     };
+     firebase.initializeApp(config);
+
     angular
         .module('app.core')
         .config(initDebug)

@@ -73,5 +73,10 @@
   "bugs": {
     "url": "https://github.com/yellownoggin/trybeup-ajs1/issues"
   },
-  "homepage": "https://github.com/yellownoggin/trybeup-ajs1#readme"
+  "homepage": "https://github.com/yellownoggin/trybeup-ajs1#readme",
+  "dependencies": {
+    "@types/angular": "^1.6.25",
+    "@types/angular-ui-router": "^1.1.37",
+    "@types/angularfire": "^0.8.31"
+  }
 }

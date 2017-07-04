@@ -5,6 +5,7 @@ namespace app {
         .module('app.core', [
             'ngMaterial',
             'ui.router',
-            'ngAnimate'
+            'ngAnimate',
+            'firebase'
         ]);
 };
