@@ -3,6 +3,8 @@ namespace app {
 
 
     // Initialize Firebase
+    // TODO: this should put in the area of best practice
+    // see  https://github.com/firebase/angularfire/blob/master/docs/reference.md#initialization
      const config = {
        apiKey: 'AIzaSyAev5B591IvR4DlNtyAQmsoqGwcC-dtZpE',
        authDomain: 'ytribe-ajs16.firebaseapp.com',

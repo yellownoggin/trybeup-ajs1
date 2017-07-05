@@ -20,6 +20,7 @@ namespace app {
         vm.$location = $location;
         vm.$timeout = $timeout;
         vm.signOut = signOut;
+        vm.appFire = appFirebase;
         vm.$timeout(() => { console.log(vm.state.current, 'current state')}, 1);
 
         // Methods
@@ -27,18 +28,23 @@ namespace app {
         function signInWithGoogle() {
             vm.auth.$signInWithPopup('google')
                 .then((result) => {
-                    // const currentUser = vm.auth.$getAuth();
                     const uid = result.user.uid;
-                    // console.log(profileUrl, 'profileUrl');
-                    // console.log($location.url, 'locationUrl');
+                    const imageUrl = result.user.photoURL;
+                    console.log(result.user, 'user');
+                    const displayName = result.user.displayName;
 
-                    // appFirebase.saveUserData(result.user.photoUrl, result.user.displayName);
+                    // vm.appFire.saveUserData(imageUrl, displayName, uid);
+
+
+                    appFirebase.saveUserData(imageUrl, displayName, uid);
                     vm.$timeout(() => {
                         vm.state.go('profile.user', {uid: uid})
                         console.log(uid, 'inside timeout');
                     }, 1000);
                     // console.log('signed in as ', result.user.uid);
 
+                }).catch((e) => {
+                    console.log('Authentication Failed', e);
                 });
         }
 
