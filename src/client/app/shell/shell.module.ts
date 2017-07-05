@@ -2,5 +2,5 @@ namespace app {
     'use strict';
 
     angular
-        .module('app.shell', []);
+        .module('app.shell', ['firebase']);
 };
