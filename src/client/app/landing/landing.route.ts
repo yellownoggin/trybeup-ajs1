@@ -14,6 +14,7 @@ namespace app {
                 url: '/',
                 views: {
                     main: {
+                        controller: 'SignInController',
                         templateUrl: 'app/landing/landing.html'
                     }
                 }

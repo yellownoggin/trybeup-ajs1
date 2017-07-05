@@ -1,5 +1,5 @@
 <!--header hero/masthead -->
-<header class="hero-background hero-header-spacing">
+<header class="hero-background hero-header-spacing" ng-controller="SignInController as sc">
 
   <section class="hero-section-container section-center" layout="row" layout-align="center start" layout-wrap>
 
@@ -11,9 +11,10 @@
     <div flex="100" flex-gt-sm="50">
       <!-- fix to center right side in xs and not in larger views -->
       <div layout="column" layout-align="center center" layout-align-gt-sm="">
-        <h4 class="md-display-1">Angular Material Prototype</h4>
-        <h5 class="md-subhead">Prototype template of AngularMaterial.io</h5>
-        <md-button class="md-accent md-hue-1 md-raised mdl-button">Preview on Github</md-button>
+        <h4 class="md-display-1">YTribe</h4>
+        <h5 class="md-subhead">Create or Join a Tribe and Get Things Done.</h5>
+        <h5 class="md-subhead">Get Started, by signing in.</h5>
+        <md-button class="md-accent md-hue-1 md-raised mdl-button" ng-click="sc.signInGoogle()">Sign in with Google</md-button>
       </div>
     </div>
   </section>
@@ -54,5 +55,5 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
     </p>
   </div>
- 
+
 </section>

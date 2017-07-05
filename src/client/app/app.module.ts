@@ -5,12 +5,7 @@ namespace app {
     .module('app', [
         'app.core',
         'app.landing',
-        'app.shell'
+        'app.shell',
+        'userManagment'
     ]);
-//     .controller('MainController', MainController);
-//
-//     function MainController() {
-//         const vm = this;
-//         vm.test = 'Hello World';
-//     }
 }

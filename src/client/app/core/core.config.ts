@@ -11,13 +11,16 @@ namespace app {
        storageBucket: 'ytribe-ajs16.appspot.com',
        messagingSenderId: '1062731323167'
      };
+     // TODO: why is this underlized with types firebase there
+     // thought you could also add a workaround... but what is best practice
      firebase.initializeApp(config);
 
     angular
         .module('app.core')
         .config(initDebug)
         .config(initRouter)
-        .config(initTheme);
+        .config(initTheme)
+        .constant('latinize', window.latinize);
 
         /**
      * Toggle debug info data (better disabled in production environments)

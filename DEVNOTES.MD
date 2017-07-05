@@ -1,0 +1,1 @@
+- took out of tslint: "no-trailing-whitespace": true,

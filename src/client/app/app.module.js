@@ -1,3 +1,4 @@
+"use strict";
 var app;
 (function (app) {
     'use strict';
@@ -5,12 +6,7 @@ var app;
         .module('app', [
         'app.core',
         'app.landing',
-        'app.shell'
+        'app.shell',
+        'userManagment'
     ]);
-    //     .controller('MainController', MainController);
-    //
-    //     function MainController() {
-    //         const vm = this;
-    //         vm.test = 'Hello World';
-    //     }
 })(app || (app = {}));

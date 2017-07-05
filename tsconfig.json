@@ -6,7 +6,9 @@
         "sourceMap": false,
         "experimentalDecorators": true,
         "moduleResolution": "node",
-        "listFiles": true
+        "listFiles": true,
+        "alwaysStrict": true,
+        "removeComments": true
     },
     "include": [
         "src/client/app"
